@@ -1,0 +1,6 @@
+float64 a
+float64 b
+int64 c
+----
+float64 sum
+bool result

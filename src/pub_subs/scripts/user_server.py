@@ -25,17 +25,11 @@ class userAction(object):
 
 
       
-    def execute_cb(self, goal):
-	print("Started here22")
+    def execute_cb(self, goal)
 
         # helper variables
         success = True
-        
-        # append the seeds for the fibonacci sequence
-
-        
-        
-	
+ 
         
         # start executing the action
         if(goal.uinput != 'A'):
@@ -44,7 +38,6 @@ class userAction(object):
 	    	
             self._feedback.feedBack = self._feedback.feedBack + goal.uinput
 	    self._feedback.feedBack = self._feedback.feedBack + "\n"
-            print("I am here")
             self._as.publish_feedback(self._feedback)
 	    print(self._feedback.feedBack)
 	    self.passs = self.passs + 1

@@ -8,14 +8,11 @@ import rospy
 import pub_subs
 import pub_subs.msg
 import actionlib
-# Brings in the messages used by the fibonacci action, including the
-# goal message and the result message.
+
 import pub_subs.msg
 
 
 def userAction_client():
-    # Creates the SimpleActionClient, passing the type of the action
-    # (FibonacciAction) to the constructor.
     string = ""
     client = actionlib.SimpleActionClient('server', pub_subs.msg.assignmentAction)
 
@@ -33,7 +30,7 @@ def userAction_client():
     	client.wait_for_result()
 
     # Prints out the result of executing the action
-    	return client.get_result()  # A FibonacciResult
+    	return client.get_result()  
 
 if __name__ == '__main__':
     try:
